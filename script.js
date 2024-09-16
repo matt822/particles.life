@@ -124,12 +124,12 @@ function initialize() {
             staticParticleColors: ['#A4C3B2', '#D9BF77', '#FE7F2D'],
             movingParticleColors: ['#E07A5F', '#F4F1DE', '#81B29A', '#F2CC8F']
         },
-        {
-            name: 'Deep Forest',
-            backgroundColor: '#0A2E14',  // Very dark, deep forest green
-            staticParticleColors: ['#E0E0E0', '#D8D8D8', '#CFCFCF', '#BFBFBF'],  // Various shades of off-white
-            movingParticleColors: ['#1B4332', '#2D6A4F', '#4A4E69', '#3A403D', '#6B4226']  // Dark greens and browns for a natural, earthy feel
-        },
+        //{
+        //    name: 'Deep Forest',
+        //    backgroundColor: '#0A2E14',  // Very dark, deep forest green
+        //    staticParticleColors: ['#E0E0E0', '#D8D8D8', '#CFCFCF', '#BFBFBF'],  // Various shades of off-white
+        //    movingParticleColors: ['#1B4332', '#2D6A4F', '#4A4E69', '#3A403D', '#6B4226']  // Dark greens and browns for a natural, earthy feel
+        //},
         {
             name: 'Frozen Tundra',
             backgroundColor: '#1C3144',  // Arctic blue
