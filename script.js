@@ -5,7 +5,7 @@ window.onload = function() {
 function initialize() {
 
     let particleSizeMultiplier = 1; // Default value
-    let currentText = 'x.particles';
+    let currentText = 'particles';
     let isClockActive = false;
     let clockSettings = {
         format: '24', // '24' or '12'
