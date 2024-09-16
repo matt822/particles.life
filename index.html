@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Interactive Particle App</title>
+    <!-- Include Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Toolbar -->
+    <nav class="toolbar">
+        <!-- Logo -->
+        <div class="toolbar-logo" id="toolbar-logo">
+            x.particles
+        </div>
+        <!-- Toolbar Right Section -->
+        <div class="toolbar-right">
+            <!-- Toolbar Items -->
+            <div class="toolbar-items">
+                <div class="toolbar-item" id="text-option" title="Text Input">
+                    <i class="fas fa-font"></i>
+                </div>
+                <div class="toolbar-item" id="color-option" title="Color Palette">
+                    <i class="fas fa-palette"></i>
+                </div>
+                <div class="toolbar-item" id="clock-option" title="Clock Settings">
+                    <i class="fas fa-clock"></i>
+                </div>
+            </div>
+            <!-- Particle Size Slider -->
+            <div class="slider-container">
+                <div class="slider-icon">
+                    <!-- Small particle icon -->
+                    <i class="fas fa-circle small-particle"></i>
+                </div>
+                <input type="range" id="particle-size-slider" min="0.5" max="2" step="0.1" value="1">
+                <div class="slider-icon">
+                    <!-- Large particle icon -->
+                    <i class="fas fa-circle large-particle"></i>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Canvas -->
+    <canvas id="canvas"></canvas>
+
+    <!-- Text Input Modal -->
+    <div id="text-modal" class="modal">
+        <div class="modal-content">
+            <span class="close" id="text-modal-close">&times;</span>
+            <h2>Enter Your Text</h2>
+            <textarea id="user-text" placeholder="Enter text here" maxlength="100" rows="3"></textarea>
+            <button id="submit-text">Submit</button>
+        </div>
+    </div>
+
+    <!-- Color Selection Modal -->
+    <div id="color-modal" class="modal">
+        <div class="modal-content">
+            <span class="close" id="color-modal-close">&times;</span>
+            <h2>Select a Color Palette</h2>
+            <div class="palette-container">
+                <!-- Palettes will be generated dynamically -->
+            </div>
+        </div>
+    </div>
+
+    <!-- Clock Settings Modal -->
+    <div id="clock-modal" class="modal">
+        <div class="modal-content">
+            <span class="close" id="clock-modal-close">&times;</span>
+            <h2>Clock Settings</h2>
+            <form id="clock-settings-form">
+                <div class="form-group">
+                    <label for="time-format">Time Format:</label>
+                    <select id="time-format">
+                        <option value="24">24-Hour</option>
+                        <option value="12">12-Hour</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="show-seconds">Show Seconds:</label>
+                    <input type="checkbox" id="show-seconds" checked>
+                </div>
+                <button type="submit">Apply</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Include the main JavaScript file -->
+    <script src="script.js"></script>
+</body>
+</html>
