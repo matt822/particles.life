@@ -96,7 +96,7 @@ function initialize() {
 
 
     // Default to the first color palette
-    const defaultPaletteIndex = 0;
+    const defaultPaletteIndex = 3;
 
     // Define color palettes
     const colorPalettes = [
